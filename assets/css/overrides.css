@@ -1,0 +1,424 @@
+/* ACTA Website Custom CSS Overrides */
+
+:root {
+  --brand: #1B66D1;
+  --navy: #0E2E52;
+  --ink: #0B0E11;
+}
+
+/* Skip link styles */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  background: var(--navy);
+  color: white;
+  padding: 8px;
+  text-decoration: none;
+  border-radius: 4px;
+  z-index: 1000;
+  transition: top 0.3s;
+}
+
+.skip-link:focus {
+  top: 6px;
+  clip-path: none;
+}
+
+/* Header reveal animation */
+.site-header {
+  transform: translateY(-8px);
+  opacity: 0;
+  transition: transform 0.2s ease, opacity 0.2s ease, backdrop-filter 0.2s ease;
+}
+
+html[data-state="scrolled"] .site-header,
+html[data-state="loaded"] .site-header {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Desktop navigation fallback */
+.desktop-nav {
+  display: block !important;
+}
+
+/* Mobile menu button */
+.mobile-menu-button-container {
+  display: none;
+}
+
+/* Responsive behavior */
+@media (max-width: 767px) {
+  .desktop-nav {
+    display: none !important;
+  }
+  
+  .mobile-menu-button-container {
+    display: block !important;
+  }
+}
+
+/* Mobile menu animations */
+.mobile-menu {
+  transition: all 0.3s ease;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.mobile-menu:not(.hidden) {
+  max-height: 300px;
+}
+
+/* Fade up animation for scroll reveals */
+.fade-up {
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.15s ease, transform 0.15s ease;
+  will-change: opacity, transform;
+}
+
+.fade-up.is-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Cookie banner and modal animations */
+#cookie-banner {
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+#cookie-banner:not(.hidden) {
+  transform: translateY(0);
+}
+
+#cookie-modal {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#cookie-modal:not(.hidden) {
+  opacity: 1;
+}
+
+/* Form validation styles */
+input[aria-invalid="true"],
+textarea[aria-invalid="true"] {
+  border-color: #dc2626;
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.1);
+}
+
+/* Focus styles for better accessibility */
+button:focus,
+input:focus,
+textarea:focus,
+a:focus {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar for webkit browsers */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--brand);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--navy);
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+    scroll-behavior: auto !important;
+  }
+  
+  .fade-up {
+    opacity: 1;
+    transform: none;
+  }
+  
+  .site-header {
+    opacity: 1;
+    transform: none;
+  }
+  
+  .mobile-menu {
+    transition: none;
+  }
+  
+  #cookie-banner,
+  #cookie-modal {
+    transition: none;
+  }
+}
+
+/* Print styles */
+@media print {
+  .site-header,
+  .mobile-menu,
+  #cookie-banner,
+  #cookie-modal,
+  footer {
+    display: none !important;
+  }
+  
+  body {
+    font-size: 12pt;
+    line-height: 1.4;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+  }
+  
+  .fade-up {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  :root {
+    --brand: #0000ff;
+    --navy: #000000;
+    --ink: #000000;
+  }
+  
+  .bg-slate-50 {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+  }
+}
+
+/* Dark mode support (if needed in future) */
+@media (prefers-color-scheme: dark) {
+  /* Currently not implemented as per requirements */
+  /* This section is reserved for future dark mode implementation */
+}
+
+/* Utility classes for JavaScript interactions */
+.hidden {
+  display: none !important;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.sr-only:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  padding: inherit;
+  margin: inherit;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}
+
+/* Loading states */
+.loading {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* Success and error message animations */
+.alert-enter {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.alert-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Custom checkbox and toggle styles */
+input[type="checkbox"]:checked {
+  background-color: var(--brand);
+  border-color: var(--brand);
+}
+
+/* Ensure proper spacing for form elements */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group:last-child {
+  margin-bottom: 0;
+}
+
+/* Fast hover animations */
+.transition-shadow {
+  transition: box-shadow 0.1s ease !important;
+}
+
+.hover\:shadow-md:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+}
+
+/* Fast transition classes */
+.transition-colors {
+  transition: color 0.1s ease, background-color 0.1s ease, border-color 0.1s ease !important;
+}
+
+/* Custom button hover effects */
+.btn-primary {
+  background-color: var(--brand);
+  color: white;
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--navy);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(27, 102, 209, 0.3);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--brand);
+  border: 2px solid var(--brand);
+  transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background-color: var(--brand);
+  color: white;
+}
+
+/* Ensure proper text rendering */
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom focus ring for better accessibility */
+.focus-ring:focus {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Ensure proper contrast for all text */
+.text-ink {
+  color: var(--ink);
+}
+
+.text-navy {
+  color: var(--navy);
+}
+
+.text-brand {
+  color: var(--brand);
+}
+
+/* Custom spacing utilities */
+.scroll-mt-20 {
+  scroll-margin-top: 5rem;
+}
+
+/* Ensure proper mobile touch targets */
+@media (max-width: 768px) {
+  button,
+  input,
+  textarea,
+  select,
+  a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  .mobile-menu a {
+    padding: 12px 16px;
+  }
+  
+  /* Fix oversized checkboxes on mobile */
+  input[type="checkbox"] {
+    width: 14px !important;
+    height: 14px !important;
+    min-width: 14px !important;
+    min-height: 14px !important;
+  }
+  
+  /* Specific styling for consent checkbox on mobile */
+  #consent {
+    width: 12px !important;
+    height: 12px !important;
+    min-width: 12px !important;
+    min-height: 12px !important;
+  }
+}
+
+/* Hamburger menu icon animation */
+.mobile-menu-button {
+  position: relative;
+}
+
+.hamburger-icon,
+.close-icon {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transition: opacity 0.3s ease, transform 0.3s ease;
+  display: block !important;
+}
+
+.close-icon {
+  opacity: 0;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  -webkit-transform: translate(-50%, -50%) rotate(-90deg);
+}
+
+.mobile-menu-button[aria-expanded="true"] .hamburger-icon {
+  opacity: 0;
+  transform: translate(-50%, -50%) rotate(90deg);
+  -webkit-transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.mobile-menu-button[aria-expanded="true"] .close-icon {
+  opacity: 1;
+  transform: translate(-50%, -50%) rotate(0deg);
+  -webkit-transform: translate(-50%, -50%) rotate(0deg);
+}
+
+/* Safari-specific fixes */
+@supports (-webkit-appearance: none) {
+  .hamburger-icon,
+  .close-icon {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+}
+
+
