@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ACTA Trusted Technical Support for Type-Approval Authorities</title>
-    <meta name="description" content="ACTA partners exclusively with Type Approval Authorities to deliver impartial audits, technical evaluations, and digital solutions for a trustworthy and efficient type approval process.">
+    <title>ACIU — Trusted Technical Support for Type-Approval Authorities</title>
+    <meta name="description" content="ACIU partners exclusively with Type Approval Authorities to deliver impartial audits, technical evaluations, and digital solutions for a trustworthy and efficient type approval process.">
     
     <!-- Open Graph -->
-    <meta property="og:title" content="ACTA — Trusted Technical Support for Type-Approval Authorities">
-    <meta property="og:description" content="ACTA partners exclusively with Type Approval Authorities to deliver impartial audits, technical evaluations, and digital solutions for a trustworthy and efficient type approval process.">
+    <meta property="og:title" content="ACIU — Trusted Technical Support for Type-Approval Authorities">
+    <meta property="og:description" content="ACIU partners exclusively with Type Approval Authorities to deliver impartial audits, technical evaluations, and digital solutions for a trustworthy and efficient type approval process.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://acta-approval.com.mt">
     
@@ -42,14 +42,15 @@
     <a href="#main" class="skip-link sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-navy text-white px-4 py-2 rounded z-50">Skip to main content</a>
     
     <!-- Header -->
-    <header class="site-header fixed top-0 inset-x-0 z-40 bg-white/80 backdrop-blur border-b border-slate-200" style="opacity: 1 !important; transform: none !important;">
-        <div class="max-w-content mx-auto px-4 sm:px-6 lg:px-8">
+    <header class="site-header bg-white border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Top navigation bar -->
             <div class="flex items-center justify-between h-16">
                 <!-- Logo -->
                 <div class="flex-shrink-0">
                     <a href="/" class="flex items-center">
-                        <svg width="120" height="36" viewBox="0 0 120 36" class="h-9 w-auto" role="img" aria-label="ACTA — Automotive Certification & Type Approval">
-                            <title>ACTA — Automotive Certification & Type Approval</title>
+                        <svg width="120" height="36" viewBox="0 0 120 36" class="h-9 w-auto" role="img" aria-label="ACIU — Automotive Compliance & Inspection Unit">
+                            <title>ACIU — Automotive Compliance & Inspection Unit</title>
                             <!-- Square with A design -->
                             <g transform="translate(6 6)">
                                 <rect x="0" y="0" width="24" height="24" fill="none" stroke="#0E2E52" stroke-width="2"/>
@@ -58,25 +59,36 @@
                                 <path fill="none" stroke="#0E2E52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 19 L12 15 L15 19"/>
                             </g>
                             <!-- Text -->
-                            <text x="42" y="24" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif" font-size="18" font-weight="700" fill="#0E2E52" letter-spacing="1px">ACTA</text>
+                            <text x="42" y="24" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif" font-size="18" font-weight="700" fill="#0E2E52" letter-spacing="1px">ACIU</text>
                         </svg>
                     </a>
                 </div>
                 
-                <!-- Desktop Navigation -->
-                <nav class="desktop-nav" style="display: block !important;">
-                    <div style="margin-left: 2.5rem; display: flex; align-items: baseline; gap: 2rem;">
-                        <a href="#about" style="color: #0B0E11; text-decoration: none; padding: 8px 12px; font-size: 14px; font-weight: 500; transition: color 0.2s;">About</a>
-                        <a href="#services" style="color: #0B0E11; text-decoration: none; padding: 8px 12px; font-size: 14px; font-weight: 500; transition: color 0.2s;">Services</a>
-                        <a href="#process" style="color: #0B0E11; text-decoration: none; padding: 8px 12px; font-size: 14px; font-weight: 500; transition: color 0.2s;">Process</a>
-                        <a href="#contact" style="color: #0B0E11; text-decoration: none; padding: 8px 12px; font-size: 14px; font-weight: 500; transition: color 0.2s;">Contact</a>
-                        <a href="/privacy.html?v=1" style="color: #0B0E11; text-decoration: none; padding: 8px 12px; font-size: 14px; font-weight: 500; transition: color 0.2s;">Privacy</a>
+                <!-- Search bar -->
+                <div class="flex-1 max-w-lg mx-8">
+                    <div class="relative">
+                        <input type="text" placeholder="Search for..." class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        <div class="absolute inset-y-0 right-0 flex items-center pr-3">
+                            <svg class="h-5 w-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                            </svg>
+                        </div>
                     </div>
+                </div>
+                
+                <!-- Right side navigation -->
+                <div class="flex items-center space-x-6">
+                    <nav class="hidden md:flex space-x-8">
+                        <a href="#about" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">About</a>
+                        <a href="#services" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">Services</a>
+                        <a href="#process" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">Process</a>
+                        <a href="#contact" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">Contact</a>
                 </nav>
+                    <a href="/privacy.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">Privacy</a>
                 
                 <!-- Mobile menu button -->
-                <div class="mobile-menu-button-container" style="display: none;">
-                    <button type="button" class="mobile-menu-button inline-flex items-center justify-center p-2 rounded-md text-ink hover:text-brand focus:outline-none focus:ring-2 focus:ring-inset focus:ring-brand" aria-controls="mobile-menu" aria-expanded="false">
+                    <div class="md:hidden">
+                        <button type="button" class="mobile-menu-button inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500" aria-controls="mobile-menu" aria-expanded="false">
                         <span class="sr-only">Open main menu</span>
                         <!-- Hamburger Icon -->
                         <svg class="hamburger-icon block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -88,199 +100,244 @@
                         </svg>
                     </button>
                 </div>
+                </div>
+            </div>
+            
+            <!-- Main navigation menu -->
+            <div class="border-t border-gray-200">
+                <nav class="flex space-x-8 py-4">
+                    <div class="relative group">
+                        <button class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium flex items-center">
+                            Services
+                            <svg class="ml-1 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <a href="#about" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">About ACIU</a>
+                    <a href="#process" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">How we work</a>
+                    <a href="#contact" class="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">Contact</a>
+                </nav>
             </div>
         </div>
         
         <!-- Mobile menu -->
         <div class="md:hidden mobile-menu hidden" id="mobile-menu">
-            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-slate-200">
-                <a href="#about" class="text-ink hover:text-brand block px-3 py-2 text-base font-medium">About</a>
-                <a href="#services" class="text-ink hover:text-brand block px-3 py-2 text-base font-medium">Services</a>
-                <a href="#process" class="text-ink hover:text-brand block px-3 py-2 text-base font-medium">Process</a>
-                <a href="#contact" class="text-ink hover:text-brand block px-3 py-2 text-base font-medium">Contact</a>
-                <a href="/privacy.html?v=1" class="text-ink hover:text-brand block px-3 py-2 text-base font-medium">Privacy</a>
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-gray-200">
+                <a href="#about" class="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium">About</a>
+                <a href="#services" class="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium">Services</a>
+                <a href="#process" class="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium">Process</a>
+                <a href="#contact" class="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium">Contact</a>
+                <a href="/privacy.html" class="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium">Privacy</a>
             </div>
         </div>
     </header>
     
     <!-- Main Content -->
-    <main id="main">
+    <main id="main" class="pt-0">
         <!-- Hero Section -->
-        <section class="bg-[#E9F3FF] pt-32 pb-24 sm:py-32">
-            <div class="max-w-content mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex flex-col justify-center items-center min-h-[300px] sm:min-h-[480px] lg:min-h-[400px] text-center">
-                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-navy mb-10 fade-up">
-                        Trusted Technical Support for<br>
-                        Type-Approval Authorities
-                    </h1>
-                    <p class="text-xl sm:text-2xl text-ink/80 mb-16 max-w-3.5xl mx-auto fade-up">
-                        ACTA partners exclusively with Type Approval Authorities to deliver impartial audits, technical evaluations, and digital solutions for a trustworthy and efficient type approval process.
-                    </p>
-                    <div class="flex flex-row gap-2 sm:gap-4 justify-center fade-up">
-                        <a href="#contact" class="bg-brand text-white px-3 py-3 sm:px-8 sm:py-4 rounded-lg font-semibold hover:bg-brand/90 transition-colors text-sm sm:text-base flex items-center justify-center">
-                            Contact us
-                        </a>
-                        <a href="#services" class="border-2 border-brand text-brand px-3 py-3 sm:px-8 sm:py-4 rounded-lg font-semibold hover:bg-brand hover:text-white transition-colors text-sm sm:text-base flex items-center justify-center">
-                            Our services
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- About Section -->
-        <section id="about" class="py-12 scroll-mt-20">
-            <div class="max-w-content mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="max-w-4xl mx-auto">
-                    <h2 class="text-3xl sm:text-4xl font-bold text-navy mb-8 text-center fade-up">About ACTA</h2>
-                    <div class="prose prose-lg mx-auto text-ink/80 fade-up">
-                        <p class="mb-6">
-                            ACTA — Automotive Certification & Type Approval Ltd. operates as an independent partner exclusively to Type Approval Authorities (TAAs). We provide impartial technical oversight and digital solutions that strengthen the type approval process while maintaining complete independence from manufacturers.
-                        </p>
-                        <p class="mb-8">
-                            Our global audit capabilities, combined with deep expertise in EU regulatory frameworks and IT process engineering, enable us to deliver measurable outcomes that enhance authority operations and ensure continued compliance across complex supply chains.
-                        </p>
-                    </div>
-                    <div class="grid md:grid-cols-2 gap-6 fade-up">
-                        <div class="space-y-4">
-                            <div class="flex items-start">
-                                <svg class="w-6 h-6 text-brand mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                                </svg>
-                                <span class="text-ink leading-relaxed">Independent, KPI-driven oversight for TAAs</span>
-                            </div>
-                            <div class="flex items-start">
-                                <svg class="w-6 h-6 text-brand mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                                </svg>
-                                <span class="text-ink leading-relaxed">Secure document control & full traceability</span>
-                            </div>
-                        </div>
-                        <div class="space-y-4">
-                            <div class="flex items-start">
-                                <svg class="w-6 h-6 text-brand mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                                </svg>
-                                <span class="text-ink leading-relaxed">EU regulatory alignment, horizon scanning & updates</span>
-                            </div>
-                            <div class="flex items-start">
-                                <svg class="w-6 h-6 text-brand mt-1 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
-                                </svg>
-                                <span class="text-ink leading-relaxed">Practical, scalable support with measurable outcomes</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Services Section -->
-        <section id="services" class="py-12 bg-slate-50 scroll-mt-20">
-            <div class="max-w-content mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16">
-                    <h2 class="text-3xl sm:text-4xl font-bold text-navy mb-4 fade-up">Services for Authorities</h2>
-                    <p class="text-xl text-ink/80 max-w-3xl mx-auto fade-up">Comprehensive support tailored exclusively for Type Approval Authorities</p>
+        <section class="bg-gray-50 py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h1 class="text-4xl font-bold text-gray-900 mb-8">We provide comprehensive type approval services</h1>
                 </div>
                 
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Service 1 -->
-                    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow fade-up">
-                        <div class="w-12 h-12 bg-brand/10 rounded-lg flex items-center justify-center mb-4">
-                            <svg class="w-6 h-6 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-semibold text-navy mb-3">TAA Oversight & Technical Audits</h3>
-                        <p class="text-ink/80">Witnessing and auditing of manufacturers worldwide on behalf of the authority.</p>
+                <!-- Direct actions grid -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                    <!-- Vehicle Registration -->
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-4">Vehicle Registration</h3>
+                        <ul class="space-y-2 text-sm text-gray-600">
+                            <li><a href="#contact" class="hover:text-blue-600">Transfer vehicle ownership</a></li>
+                            <li><a href="#services" class="hover:text-blue-600">License plate check</a></li>
+                            <li><a href="#contact" class="hover:text-blue-600">Lost registration certificate</a></li>
+                            <li><a href="#contact" class="hover:text-blue-600">Lost transfer code</a></li>
+                        </ul>
+            </div>
+                    
+                    <!-- Driver's License & Suspension -->
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-4">Driver's License & Suspension</h3>
+                        <ul class="space-y-2 text-sm text-gray-600">
+                            <li><a href="#services" class="hover:text-blue-600">Renew driver's license online</a></li>
+                            <li><a href="#services" class="hover:text-blue-600">Supervised driving</a></li>
+                            <li><a href="#contact" class="hover:text-blue-600">Lost or stolen driver's license</a></li>
+                            <li><a href="#services" class="hover:text-blue-600">Request suspension</a></li>
+                        </ul>
                     </div>
                     
-                    <!-- Service 2 -->
-                    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow fade-up">
-                        <div class="w-12 h-12 bg-brand/10 rounded-lg flex items-center justify-center mb-4">
-                            <svg class="w-6 h-6 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
-                            </svg>
+                    <!-- I want to -->
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-4">I want to</h3>
+                        <ul class="space-y-2 text-sm text-gray-600">
+                            <li><a href="#services" class="hover:text-blue-600">Find report code</a></li>
+                            <li><a href="#services" class="hover:text-blue-600">Check my inspection date</a></li>
+                            <li><a href="#services" class="hover:text-blue-600">View my vehicles in the register</a></li>
+                            <li><a href="#contact" class="hover:text-blue-600">Schedule an inspection</a></li>
+                        </ul>
+                            </div>
                         </div>
-                        <h3 class="text-xl font-semibold text-navy mb-3">Conformity of Production (CoP) Supervision</h3>
-                        <p class="text-ink/80">System and sampling reviews for continued compliance.</p>
-                    </div>
-                    
-                    <!-- Service 3 -->
-                    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow fade-up">
-                        <div class="w-12 h-12 bg-brand/10 rounded-lg flex items-center justify-center mb-4">
-                            <svg class="w-6 h-6 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                            </svg>
+                
+                <!-- Main search section -->
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-200">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">ACIU Certificate Check</h2>
+                    <div class="max-w-md mx-auto">
+                        <div class="relative">
+                            <div class="flex w-full">
+                                <input type="text" placeholder="Certificate number" class="flex-1 px-4 py-3 border border-gray-300 rounded-l-md focus:ring-2 focus:ring-blue-500 focus:border-transparent text-lg" />
+                                <button class="px-6 py-3 bg-blue-600 text-white rounded-r-md hover:bg-blue-700 transition-colors">
+                                    Search
+                                </button>
+                            </div>
                         </div>
-                        <h3 class="text-xl font-semibold text-navy mb-3">Homologation Dossier Reviews</h3>
-                        <p class="text-ink/80">Completeness, consistency, and risk-based quality checks.</p>
-                    </div>
-                    
-                    <!-- Service 4 -->
-                    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow fade-up">
-                        <div class="w-12 h-12 bg-brand/10 rounded-lg flex items-center justify-center mb-4">
-                            <svg class="w-6 h-6 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-semibold text-navy mb-3">KPI Dashboards & Performance Monitoring</h3>
-                        <p class="text-ink/80">Authority-level KPIs, SLAs, and real-time status boards.</p>
-                    </div>
-                    
-                    <!-- Service 5 -->
-                    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow fade-up">
-                        <div class="w-12 h-12 bg-brand/10 rounded-lg flex items-center justify-center mb-4">
-                            <svg class="w-6 h-6 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-semibold text-navy mb-3">Legislative Watch & Procedures</h3>
-                        <p class="text-ink/80">EU framework tracking, SOPs, templates, and training for TAA teams.</p>
-                    </div>
-                    
-                    <!-- Service 6 -->
-                    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow fade-up">
-                        <div class="w-12 h-12 bg-brand/10 rounded-lg flex items-center justify-center mb-4">
-                            <svg class="w-6 h-6 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-semibold text-navy mb-3">IT Solutions & Business Optimisation</h3>
-                        <p class="text-ink/80">Case management, workflow automation, integrations, and data pipelines.</p>
                     </div>
                 </div>
             </div>
         </section>
         
-        <!-- Process Section -->
-        <section id="process" class="py-12 scroll-mt-20">
-            <div class="max-w-content mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="max-w-4xl mx-auto text-center">
-                    <h2 class="text-3xl sm:text-4xl font-bold text-navy mb-12 fade-up">How we work</h2>
-                    <div class="grid md:grid-cols-4 gap-8">
-                        <div class="fade-up">
-                            <div class="w-16 h-16 bg-brand text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">1</div>
-                            <h3 class="text-lg font-semibold text-navy mb-2">Inquiry</h3>
-                            <p class="text-ink/80">Initial consultation to understand your authority's specific needs and challenges.</p>
+        <!-- Topics Section -->
+        <section id="about" class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-gray-900 mb-12">Topics</h2>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Driver's License -->
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Driver's License</h3>
+                        <p class="text-gray-600 mb-4">Online renewal, lost or stolen, exchange, supervised driving, health declaration</p>
+                        <a href="#services" class="text-blue-600 hover:text-blue-800 font-medium">View all services →</a>
                         </div>
-                        <div class="fade-up">
-                            <div class="w-16 h-16 bg-brand text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">2</div>
-                            <h3 class="text-lg font-semibold text-navy mb-2">Scoping & NDA</h3>
-                            <p class="text-ink/80">Detailed project definition and confidentiality agreements to protect sensitive information.</p>
-                        </div>
-                        <div class="fade-up">
-                            <div class="w-16 h-16 bg-brand text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">3</div>
-                            <h3 class="text-lg font-semibold text-navy mb-2">Technical evaluation / audits</h3>
-                            <p class="text-ink/80">Comprehensive technical assessments and on-site audits as required.</p>
-                        </div>
-                        <div class="fade-up">
-                            <div class="w-16 h-16 bg-brand text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">4</div>
-                            <h3 class="text-lg font-semibold text-navy mb-2">Ongoing oversight & reporting</h3>
-                            <p class="text-ink/80">Continuous monitoring and regular reporting to ensure sustained compliance.</p>
-                        </div>
+                    
+                    <!-- Registration Certificate -->
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Registration Certificate</h3>
+                        <p class="text-gray-600 mb-4">Lost, exchange, lost transfer code</p>
+                        <a href="#services" class="text-blue-600 hover:text-blue-800 font-medium">View all services →</a>
                     </div>
+                    
+                    <!-- Buying or Selling -->
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Buying or Selling</h3>
+                        <p class="text-gray-600 mb-4">Transfer to person, to company, selling, vehicle inheritance</p>
+                        <a href="#services" class="text-blue-600 hover:text-blue-800 font-medium">View all services →</a>
+                        </div>
+                    
+                    <!-- Your Vehicle and Data -->
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Your Vehicle and Data</h3>
+                        <p class="text-gray-600 mb-4">Vehicle report, license plate check, check mileage, modify data</p>
+                        <a href="#services" class="text-blue-600 hover:text-blue-800 font-medium">View all services →</a>
+                    </div>
+                    
+                    <!-- Suspension -->
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Suspension</h3>
+                        <p class="text-gray-600 mb-4">Request, extend, cancel</p>
+                        <a href="#services" class="text-blue-600 hover:text-blue-800 font-medium">View all services →</a>
+                    </div>
+                    
+                    <!-- Vehicle Inspection -->
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Vehicle Inspection</h3>
+                        <p class="text-gray-600 mb-4">How often and when, inspection report, about vehicle inspection</p>
+                        <a href="#services" class="text-blue-600 hover:text-blue-800 font-medium">View all services →</a>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-12">
+                    <a href="#services" class="text-blue-600 hover:text-blue-800 font-medium">More topics (12) →</a>
+                </div>
+                        </div>
+        </section>
+        
+        <!-- Featured Section -->
+        <section id="services" class="py-16 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-gray-900 mb-12">Featured</h2>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Featured item 1 -->
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">TAA Oversight & Technical Audits</h3>
+                        <p class="text-gray-600 mb-4">Witnessing and auditing of manufacturers worldwide on behalf of the authority.</p>
+                        <a href="#contact" class="text-blue-600 hover:text-blue-800 font-medium">More information →</a>
+                    </div>
+                    
+                    <!-- Featured item 2 -->
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Conformity of Production (CoP) Supervision</h3>
+                        <p class="text-gray-600 mb-4">System and sampling reviews for continued compliance.</p>
+                        <a href="#contact" class="text-blue-600 hover:text-blue-800 font-medium">More information →</a>
+                    </div>
+                    
+                    <!-- Featured item 3 -->
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Homologation Dossier Reviews</h3>
+                        <p class="text-gray-600 mb-4">Completeness, consistency, and risk-based quality checks.</p>
+                        <a href="#contact" class="text-blue-600 hover:text-blue-800 font-medium">More information →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- News Section -->
+        <section class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-gray-900 mb-12">News</h2>
+                
+                <div class="space-y-6">
+                    <div class="border-l-4 border-blue-600 pl-6">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">ACIU grants approval to first self-driving bus on public roads</h3>
+                        <p class="text-gray-600">We are starting to make our buildings more sustainable. We will also merge a number of locations in the future.</p>
+                        <a href="#contact" class="text-blue-600 hover:text-blue-800 font-medium text-sm">Read more →</a>
+                    </div>
+                    
+                    <div class="border-l-4 border-gray-300 pl-6">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">Reminder sent for refund of suspension costs for motorhomes</h3>
+                        <p class="text-gray-600">Settlement in 'dieselgate' case: compensation for vehicle owners</p>
+                        <a href="#contact" class="text-blue-600 hover:text-blue-800 font-medium text-sm">Read more →</a>
+                    </div>
+                    
+                    <div class="border-l-4 border-gray-300 pl-6">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">Refund of suspension fees largely completed</h3>
+                        <p class="text-gray-600">Preview of the digital registration certificate</p>
+                        <a href="#contact" class="text-blue-600 hover:text-blue-800 font-medium text-sm">Read more →</a>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-8">
+                    <a href="#contact" class="text-blue-600 hover:text-blue-800 font-medium">Read more →</a>
+                        </div>
+                        </div>
+        </section>
+        
+        <!-- Dossiers Section -->
+        <section id="process" class="py-16 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-gray-900 mb-12">Dossiers</h2>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Vehicle Automation</h3>
+                        <p class="text-gray-600">Advanced vehicle automation and autonomous systems certification</p>
+                        <a href="#contact" class="text-blue-600 hover:text-blue-800 font-medium">View dossier →</a>
+                        </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Truck Taxation</h3>
+                        <p class="text-gray-600">Commercial vehicle taxation and regulatory compliance</p>
+                        <a href="#contact" class="text-blue-600 hover:text-blue-800 font-medium">View dossier →</a>
+                        </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-3">Emission Control</h3>
+                        <p class="text-gray-600">Emission control and environmental compliance monitoring</p>
+                        <a href="#contact" class="text-blue-600 hover:text-blue-800 font-medium">View dossier →</a>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-8">
+                    <a href="#contact" class="text-blue-600 hover:text-blue-800 font-medium">View dossiers →</a>
                 </div>
             </div>
         </section>
@@ -292,10 +349,10 @@
                     <div class="bg-white p-8 rounded-lg shadow-sm fade-up">
                         <h3 class="text-xl font-semibold text-navy mb-4">Compliance & Confidentiality</h3>
                         <p class="text-ink/80 mb-4">
-                            ACTA maintains strict impartiality and information security standards, ensuring all activities align with EU regulatory frameworks. Our independence from manufacturers guarantees unbiased technical oversight and confidential handling of sensitive authority data.
+                            ACIU maintains strict impartiality and information security standards, ensuring all activities align with EU regulatory frameworks. Our independence from manufacturers guarantees unbiased technical oversight and confidential handling of sensitive authority data.
                         </p>
                         <p class="text-sm font-medium text-navy">
-                            <strong>ACTA does not provide services to manufacturers.</strong>
+                            <strong>ACIU does not provide services to manufacturers.</strong>
                         </p>
                     </div>
                 </div>
@@ -316,7 +373,7 @@
                         <div class="fade-up">
                             <h3 class="text-2xl font-semibold text-navy mb-6">Get in touch</h3>
                             <p class="text-ink/80 mb-8">
-                                Our team of technical experts is ready to discuss how ACTA can support your authority's type approval operations. We respond to all inquiries within 2 working days.
+                                Our team of technical experts is ready to discuss how ACIU can support your authority's type approval operations. We respond to all inquiries within 2 working days.
                             </p>
                             
                             <div class="space-y-4">
@@ -338,7 +395,7 @@
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
                                     </svg>
                                     <div class="text-ink">
-                                        <div>ACTA — Automotive Certification & Type Approval Ltd.</div>
+                                        <div>ACIU — Automotive Compliance & Inspection Unit</div>
                                         <div>123 Business Park, Valletta, Malta</div>
                                     </div>
                                 </div>
@@ -421,19 +478,67 @@
     </main>
     
     <!-- Footer -->
-    <footer class="bg-navy text-white py-12">
-        <div class="max-w-content mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="mb-4 md:mb-0">
-                    <p class="text-sm">&copy; <span id="current-year"></span> ACTA — Automotive Certification & Type Approval Ltd.</p>
+    <footer class="bg-gray-800 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Topics -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Topics</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#services" class="hover:text-blue-300 transition-colors">Registration Certificate</a></li>
+                        <li><a href="#services" class="hover:text-blue-300 transition-colors">Buying or Selling</a></li>
+                        <li><a href="#services" class="hover:text-blue-300 transition-colors">Suspension</a></li>
+                        <li><a href="#services" class="hover:text-blue-300 transition-colors">Driver's License</a></li>
+                        <li><a href="#services" class="hover:text-blue-300 transition-colors">Vessel</a></li>
+                        <li><a href="#services" class="hover:text-blue-300 transition-colors">Inspection</a></li>
+                    </ul>
                 </div>
-                <div class="flex flex-wrap justify-center md:justify-end space-x-6 text-sm">
-                    <a href="#about" class="hover:text-blue-300 transition-colors">About</a>
-                    <a href="#services" class="hover:text-blue-300 transition-colors">Services</a>
-                    <a href="#process" class="hover:text-blue-300 transition-colors">Process</a>
-                    <a href="#contact" class="hover:text-blue-300 transition-colors">Contact</a>
-                    <a href="/privacy.html?v=1" class="hover:text-blue-300 transition-colors">Privacy</a>
-                    <button id="cookie-settings" class="hover:text-blue-300 transition-colors">Cookie settings</button>
+                
+                <!-- More Topics -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">More Topics</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#services" class="hover:text-blue-300 transition-colors">License Plate</a></li>
+                        <li><a href="#services" class="hover:text-blue-300 transition-colors">Drone</a></li>
+                        <li><a href="#services" class="hover:text-blue-300 transition-colors">Import, Export and Transit</a></li>
+                        <li><a href="#services" class="hover:text-blue-300 transition-colors">Scrapping</a></li>
+                        <li><a href="#services" class="hover:text-blue-300 transition-colors">Your Vehicle and Data</a></li>
+                        <li><a href="#services" class="hover:text-blue-300 transition-colors">Vehicle Inspection</a></li>
+                    </ul>
+                </div>
+                
+                <!-- About ACIU -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">About ACIU</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#contact" class="hover:text-blue-300 transition-colors">Maintenance and Outages</a></li>
+                        <li><a href="#contact" class="hover:text-blue-300 transition-colors">News</a></li>
+                        <li><a href="#contact" class="hover:text-blue-300 transition-colors">Press</a></li>
+                        <li><a href="#contact" class="hover:text-blue-300 transition-colors">Vacancies</a></li>
+                        <li><a href="#contact" class="hover:text-blue-300 transition-colors">Information in English</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Legal -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Legal</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/privacy.html" class="hover:text-blue-300 transition-colors">Privacy Statement</a></li>
+                        <li><a href="#contact" class="hover:text-blue-300 transition-colors">About this site</a></li>
+                        <li><a href="#contact" class="hover:text-blue-300 transition-colors">Accessibility Statement</a></li>
+                        <li><a href="#contact" class="hover:text-blue-300 transition-colors">Go to English site</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="mb-4 md:mb-0">
+                        <p class="text-sm text-gray-400">&copy; <span id="current-year"></span> ACIU — Automotive Compliance & Inspection Unit</p>
+                    </div>
+                    <div class="flex space-x-6 text-sm">
+                        <button id="cookie-settings" class="text-gray-400 hover:text-blue-300 transition-colors">Cookie settings</button>
+                    </div>
                 </div>
             </div>
         </div>

@@ -25,17 +25,10 @@
   clip-path: none;
 }
 
-/* Header reveal animation */
+/* Header styling */
 .site-header {
-  transform: translateY(-8px);
-  opacity: 0;
-  transition: transform 0.2s ease, opacity 0.2s ease, backdrop-filter 0.2s ease;
-}
-
-html[data-state="scrolled"] .site-header,
-html[data-state="loaded"] .site-header {
-  opacity: 1;
-  transform: translateY(0);
+  position: relative;
+  z-index: 40;
 }
 
 /* Desktop navigation fallback */
