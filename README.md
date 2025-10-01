@@ -1,6 +1,6 @@
-# ACTA Website
+# ACIU Website
 
-A lightweight, mobile-first website for ACTA — Automotive Certification & Type Approval Ltd. Built with HTML, CSS (Tailwind), and vanilla JavaScript.
+A lightweight, mobile-first website for ACIU — Automotive Compliance & Inspection Unit Ltd. Built with HTML, CSS (Tailwind), and vanilla JavaScript.
 
 ## 🚀 Quick Start
 
@@ -11,7 +11,7 @@ A lightweight, mobile-first website for ACTA — Automotive Certification & Type
 ## 📁 Project Structure
 
 ```
-ACTA-website/
+ACIU-website/
 ├── index.html                 # Main homepage
 ├── privacy.html              # Privacy policy page
 ├── favicon.svg               # Site favicon
@@ -25,7 +25,7 @@ ACTA-website/
 │   │   ├── consent.js        # GDPR cookie consent manager
 │   │   └── contact.js        # Contact form validation & submission
 │   └── img/
-│       └── logo-acta.svg     # Company logo
+│       └── logo-aciu.svg     # Company logo
 └── README.md                 # This file
 ```
 
@@ -177,12 +177,12 @@ To add Google Analytics or similar tracking:
 ### API Usage
 ```javascript
 // Check if category is allowed
-if (window.ACTAConsent.isAllowed('analytics')) {
+if (window.ACIUConsent.isAllowed('analytics')) {
   // Run analytics code
 }
 
 // Update consent preferences
-window.ACTAConsent.update({
+window.ACIUConsent.update({
   analytics: true,
   marketing: false
 });
@@ -284,13 +284,13 @@ tailwind.config = {
 ## 📞 Support
 
 For technical support or questions about this website:
-- Email: contact@acta-approval.com
+- Email: contact@aciu-approval.com
 - Phone: +44 (0) 20 7123 4567
 
 ## 📄 License
 
-This website is proprietary to ACTA — Automotive Certification & Type Approval Ltd.
+This website is proprietary to ACIU — Automotive Compliance & Inspection Unit Ltd.
 
 ---
 
-**Note**: This website is designed exclusively for Type Approval Authorities. ACTA does not provide services to manufacturers.
+**Note**: This website is designed exclusively for Type Approval Authorities. ACIU does not provide services to manufacturers.
